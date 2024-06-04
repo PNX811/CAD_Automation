@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="color_validation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,3452" sap2010:WorkflowViewState.IdRef="color_validation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:c="clr-namespace:ColorDetector;assembly=ColorDetector" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="color_validation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1488,3819" sap2010:WorkflowViewState.IdRef="color_validation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:c="clr-namespace:ColorDetector;assembly=ColorDetector" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>Microsoft.VisualBasic</x:String>
@@ -112,9 +112,10 @@
       <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="color_validation" sap:VirtualizedContainerService.HintSize="692,3387" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="color_validation" sap:VirtualizedContainerService.HintSize="692,3754" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="1788 Calhaun St" Name="Location" />
       <Variable x:TypeArguments="x:String" Default="40.237618000000" Name="Latitude" />
@@ -132,13 +133,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Login" sap:VirtualizedContainerService.HintSize="630,3276" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ddc6e89c-6170-43d8-b48d-68a0823fee7f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Login" sap:VirtualizedContainerService.HintSize="630,3643" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ddc6e89c-6170-43d8-b48d-68a0823fee7f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,2986" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,3353" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -163,15 +164,15 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_6">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:GetPosition ContinueOnError="{x:Null}" DisplayName="Get Position 'IMG'" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="GetPosition_1" Rectangle="[Corodinates]">
+                  <ui:GetPosition ContinueOnError="{x:Null}" DisplayName="Get Position 'IMG'" sap:VirtualizedContainerService.HintSize="354,52" sap2010:WorkflowViewState.IdRef="GetPosition_1" Rectangle="[Corodinates]">
                     <ui:GetPosition.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7198e24b-67a0-431f-8cde-3d056a8b97f2" InformativeScreenshot="1044b12ab1f1281e6debec7d0829c0f2" Selector="&lt;html app='kpi.phoenix.cadclient.exe' title='OnlineMap' /&gt;&lt;webctrl idx='41' parentid='map_canvas' src='https://maps.gstatic.com/mapfiles/transparent.png' tag='IMG' /&gt;">
                         <ui:Target.TimeoutMS>
@@ -198,7 +199,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -216,7 +217,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="541,255" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -255,7 +256,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
@@ -273,7 +274,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_4">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
@@ -291,15 +292,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_7">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <c:ColorFromScreen ColorScheme="PrimaryColor" Color_Value="[Colorval]" DisplayName="Color from screen" HighlightFlag="True" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="ColorFromScreen_1" X="[Corodinates.X]" Y="[Corodinates.Y]">
+                  <c:ColorFromScreen ColorScheme="PrimaryColor" Color_Value="[Colorval]" DisplayName="Color from screen" HighlightFlag="True" sap:VirtualizedContainerService.HintSize="354,52" sap2010:WorkflowViewState.IdRef="ColorFromScreen_1" X="[Corodinates.X]" Y="[Corodinates.Y]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -316,15 +317,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_8">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Color is:&quot;+Colorval]">
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,52" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Color is:&quot;+Colorval]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -341,15 +342,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_9">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Color is&quot;+Colorval]">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Color is&quot;+Colorval]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -366,7 +367,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="CommentOut_5">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
@@ -604,6 +605,7 @@
             </uix:NClick>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Call number generated successfully&quot;]" />
             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="534,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Call number generated successfully&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Ranjith&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
